@@ -8,12 +8,12 @@ import java.util.Map;
  * printing out all repeated numbers with frequency in an Array
  */
 public class PrintAllRepeatedNumWithFreq {
-    public static final int[] nums = {10, 20, 10, 40, 50, 20, 20};
+    public static final int[] numbs = {10, 20, 10, 40, 50, 20, 20};
 
     public static void main(String[] args) {
         Map<Integer, Integer> numberCountMap = new HashMap<>();
 
-        Arrays.stream(nums).forEach(n -> {
+        Arrays.stream(numbs).forEach(n -> {
             if (numberCountMap.containsKey(n)) {
                 Integer count = numberCountMap.get(n);
                 numberCountMap.put(n, count += 1);
