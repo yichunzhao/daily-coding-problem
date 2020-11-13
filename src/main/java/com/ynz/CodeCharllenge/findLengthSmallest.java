@@ -20,7 +20,7 @@ public class findLengthSmallest {
         for (Character c : target.toCharArray()) {
             if (queue.isEmpty()) queue.offer(c);
             if (!queue.contains(c)) queue.offer(c);
-            System.out.println("window: " + queue);
+            System.out.println("window: " + queue + " size: " + queue.size());
         }
 
     }
