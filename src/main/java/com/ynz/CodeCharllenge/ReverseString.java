@@ -34,7 +34,7 @@ public class ReverseString {
             stack.push(c);
         }
 
-        //converting to char array.
+        //converting a Collection of Character into a String.
         String reversed1 = stack.stream().map(String::valueOf).collect(Collectors.joining(""));
         System.out.println(reversed1);
     }
