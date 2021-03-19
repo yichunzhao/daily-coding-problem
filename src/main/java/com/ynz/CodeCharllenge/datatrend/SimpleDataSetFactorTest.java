@@ -23,7 +23,6 @@ class SimpleDataSetFactorTest {
         SimpleDataSetFactor simpleDataSetFactor = new SimpleDataSetFactor(integerList);
         boolean result = simpleDataSetFactor.isIncremental();
         assertFalse(result);
-
     }
 
     @Test
