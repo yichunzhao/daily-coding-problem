@@ -23,7 +23,6 @@ public class ReverseNumber {
             int remainder = target % 10;
             reversed = reversed * 10 + remainder;
             target = target / 10;
-
         } while (target > 0);
 
         return reversed;
