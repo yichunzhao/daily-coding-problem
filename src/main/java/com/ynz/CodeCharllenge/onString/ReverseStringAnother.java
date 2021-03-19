@@ -1,4 +1,4 @@
-package com.ynz.CodeCharllenge;
+package com.ynz.CodeCharllenge.onString;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  *
  * @author YNZ
  */
-public class ReverseString {
+public class ReverseStringAnother {
 
     public static void main(String[] args) {
         String str = "Design Patterns";
