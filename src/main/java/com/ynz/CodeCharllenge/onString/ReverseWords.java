@@ -18,7 +18,7 @@ public class ReverseWords {
         List<String> listString = Arrays.asList(words);
         Collections.reverse(listString);
 
-        String reversedWords = listString.stream().collect(Collectors.joining(" "));
+        String reversedWords = String.join(" ", listString);
         System.out.println(reversedWords);
     }
 
