@@ -16,6 +16,8 @@ public class ReverseNumber {
     }
 
     static int reverse(int number) {
+        if (number <= 0) throw new IllegalArgumentException("input positive integer");
+
         int target = number;
         int reversed = 0;
 
