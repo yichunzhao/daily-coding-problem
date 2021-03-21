@@ -14,7 +14,6 @@ public class RemoveDuplicates {
         Integer[] ints = {10, 20, 20, 30, 30, 40, 50, 50};
         List<Integer> intList = Arrays.asList(ints);
         System.out.printf("original list: %s \n ", intList);
-
         System.out.println("after removing: " + remove(intList));
     }
 
