@@ -1,6 +1,8 @@
 package com.ynz.CodeCharllenge.onString;
 
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * reverse an array of strings, using indexing
@@ -11,8 +13,9 @@ public class ReverseArrayInPlace {
 
     public static void main(String[] args) {
         System.out.printf("original names: %s \n", Arrays.deepToString(names));
-
         System.out.printf("reversed names: %s \n", Arrays.deepToString(reverse(names)));
+
+        System.out.printf("reversed names by stack: %s \n", Arrays.deepToString(reverseAnother(names)));
     }
 
     private static String[] reverse(String[] strings) {
@@ -26,6 +29,16 @@ public class ReverseArrayInPlace {
         }
 
         return reversed;
+    }
+
+    private static String[] reverseAnother(String[] strings) {
+        if (strings == null || strings.length == 0) throw new IllegalArgumentException("null value or empty");
+
+        Deque<String> stack = new LinkedList<>();
+
+        Arrays.stream(strings).forEach(s -> stack.push(s));
+
+        return stack.toArray(new String[0]);
     }
 
 }
