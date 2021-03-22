@@ -38,8 +38,8 @@ public class FirstNonRepeatedCharacter {
 
     private static Map<Character, Integer> occurrences(String str) {
         if (str == null || str.isEmpty()) throw new IllegalArgumentException("null or empty string not allowed");
-        
-        Map<Character, Integer> charOccurrencesMap = new LinkedHashMap<>();
+
+        Map<Character, Integer> charOccurrencesMap = new LinkedHashMap<>(str.length());
         char[] chars = str.toLowerCase().toCharArray();
         for (char c : chars) {
             Integer count = charOccurrencesMap.get(c);
