@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class BinarySearch {
 
-    private static final int arr[] = {12, 33, 55, 787, 44, 23};
+    private static final int arr[] = {12, 33, 55, 787, 44, 23, 369, 2012};
 
     public static void main(String[] args) {
         Arrays.sort(arr);
