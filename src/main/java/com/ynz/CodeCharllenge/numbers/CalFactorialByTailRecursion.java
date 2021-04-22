@@ -4,6 +4,13 @@ package com.ynz.CodeCharllenge.numbers;
  * tail recursion
  * <p>
  * instead of waiting until at the top of the stack, we may transfer the result from the current step to the next step
+ * <p>
+ * Note:
+ * <p>
+ * Java didn't take use of pro. due to the tail recursion.
+ * <p>
+ * Java cannot recognize tail recursion, so even using the tail recursion, java still use the stack to keep track of
+ * previous method calls.
  */
 public class CalFactorialByTailRecursion {
 
