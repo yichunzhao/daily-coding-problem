@@ -35,8 +35,7 @@ public class ShowFactorial {
     }
 
     /**
-     * using iteration to calculate individual factorial; this is not a good method; because consisting of a lot of
-     * repeating works.
+     * using iteration to calculate individual factorial;
      *
      * @param n a Integer number
      * @return its factorial result.
