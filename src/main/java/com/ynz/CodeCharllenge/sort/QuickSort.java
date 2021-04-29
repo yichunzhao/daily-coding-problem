@@ -4,12 +4,19 @@ package com.ynz.CodeCharllenge.sort;
 import java.util.Arrays;
 
 /**
- * Quick sort is a divide and conquer.
+ * Quick sort is a divide and conquer strategy as a way to improve the performance.
  * <p>
- * here we assuming the index=0 as the pivot
- *
+ * we assume the index=0 as the pivot; left pointer = pivot+1; and right pointer = array.length-1
+ * <p>
+ * The key point is the divide, i.e. partition, which return a splitting point.
+ * <p>
+ * principles:
+ * 1) ref. to left pointer, if left < right, and left value < pivot; then moving forward to the next bucket. otherwise, stop and quit.
+ * 2) ref. to right pointer, if right > left , and right value > pivot; then moving backward to the next bucket. otherwise, stop and quit.
+ * 3) the rest case must be: left value > pivot meanwhile right value < pivot; then swap them.
+ * 4) the right is the splitting point.
+ * <p>
  * reference:
- * 
  * https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheQuickSort.html?fbclid=IwAR1nbBg5kPMB69qfJ-9zipzwr3HBln4WGQN2bzK5uN_aTiM4m9bhR39C-VA
  */
 public class QuickSort {
